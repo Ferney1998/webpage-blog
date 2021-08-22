@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required #para restringir vistas a usuarios no loggeados
 from .forms import UserRegisterForm
 
-def register(request):
+def register(request):  #CAMBIAR A VISTA BASADA EN CLASE
     if request.method == 'POST':
         form = UserRegisterForm(request.POST) 
         if form.is_valid():
