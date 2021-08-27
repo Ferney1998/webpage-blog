@@ -24,7 +24,8 @@ class ProfileUpdateForm(forms.ModelForm):
         model = Profile
         fields = ['image']
 
-
+def vistafake(request):
+    return render(request "fake.html")
 
 
 """67 def validate_title(self, title):
